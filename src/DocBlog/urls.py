@@ -20,9 +20,9 @@ from .views import index
 #from blog.views import blog_index
 
 urlpatterns = [
-    path('',index, name="index"),
-    path('blog/',include("blog.urls")),
+    path('', index, name="index"),
+    path('blog/', include("blog.urls")),
     path('admin/', admin.site.urls),
-    path('error/',server_error)
-    
+    path('error/', server_error)
+
 ]
